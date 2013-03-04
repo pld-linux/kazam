@@ -7,8 +7,7 @@ Group:		X11/Applications/Multimedia
 Source0:	https://launchpad.net/kazam/stable/%{version}/+download/%{name}-%{version}.tar.gz
 # Source0-md5:	dd4fb4b0f1bad618acbbb1abfdfffc56
 URL:		https://launchpad.net/kazam
-BuildRequires:	gobject-introspection
-BuildRequires:	hicolor-icon-theme
+BuildRequires:	gettext-devel
 BuildRequires:	intltool
 BuildRequires:	python-devel
 BuildRequires:	python-distribute
