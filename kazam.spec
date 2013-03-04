@@ -1,13 +1,12 @@
 Summary:	A screencasting program created with design in mind
 Name:		kazam
 Version:	1.0.7
-Release:	0.1
+Release:	0.2
 License:	GPL v3+
 Group:		X11/Applications/Multimedia
 Source0:	https://launchpad.net/kazam/stable/%{version}/+download/%{name}-%{version}.tar.gz
 # Source0-md5:	dd4fb4b0f1bad618acbbb1abfdfffc56
 URL:		https://launchpad.net/kazam
-# for automatic typelib() Requires
 BuildRequires:	gobject-introspection
 BuildRequires:	hicolor-icon-theme
 BuildRequires:	intltool
@@ -19,11 +18,11 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	gtk-update-icon-cache
 Requires:	hicolor-icon-theme
-Requires:	python-cairo
 Requires:	python-gdata
-Requires:	python-gobject
-Requires:	python-gstreamer-0_10
-Requires:	python-xdg
+Requires:	python-gstreamer
+Requires:	python-pycairo
+Requires:	python-pygobject
+Requires:	python-pyxdg
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
