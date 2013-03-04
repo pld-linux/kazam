@@ -1,11 +1,12 @@
 Summary:	A screencasting program created with design in mind
 Name:		kazam
-Version:	1.0.6
+Version:	1.0.7
 Release:	0.1
 License:	GPL v3+
 Group:		X11/Applications/Multimedia
+Source0:	https://launchpad.net/kazam/stable/%{version}/+download/%{name}-%{version}.tar.gz
+# Source0-md5:	dd4fb4b0f1bad618acbbb1abfdfffc56
 URL:		https://launchpad.net/kazam
-Source0:	%{name}_%{version}.tar.gz
 # for automatic typelib() Requires
 BuildRequires:	gobject-introspection
 BuildRequires:	hicolor-icon-theme
@@ -35,10 +36,7 @@ Optionally you can record sound from any sound input device that is
 supported and visible by PulseAudio.
 
 %prep
-%setup -q -n ubuntu-%{name}
-# Upstream shipped two po versions with the same text remove the
-# non-standard dir one. to avoid the mess in system locale directory.
-rm -rf po/kazam-*.po
+%setup -q
 
 %build
 %{__python} setup.py build
