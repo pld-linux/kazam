@@ -15,6 +15,9 @@ BuildRequires:	python-distutils-extra
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
+Requires:	gstreamer0.10-vp8
+Requires:	gstreamer0.10-x264
+Requires:	gstreamer0.10-ximagesrc
 Requires:	gtk-update-icon-cache
 Requires:	hicolor-icon-theme
 Requires:	python-gdata
